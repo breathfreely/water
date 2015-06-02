@@ -1,7 +1,26 @@
 ﻿一、web应用功能
-
+   （一）登陆与注册
+   （二）个人管理
+   （三）网上选课
+   （四）教学评估
+   （五）考务管理
+   （六）综合查询
+   （七）考试报名
+   （八）紧急通知栏
 二、web应用运行的软、硬件环境
-
+   （一）软件环境
+	客户端：
+	(1)操作系统：Windows2000/XP/2003/Vista/win7
+	(2)网络协议：TCP/IP协议
+	(3)浏览器：Internet Explorer 6.0以上版本
+	服务器端：
+	(1)操作系统：Windows Server 2003 Enterprise Edition
+	(2)网络协议：TCP/IP协议
+	(3)WEB服务器：Internet Information Server 6.0
+	(4)数据库：Microsoft SQL Sever 2005 Developer Edition
+   （二）硬件环境
+	(1)服务器 CPU:Pentium 双核 以上 ,内存:1G以上
+	(2)客户机 CPU:P4 以上，内存：256M以上
 三、web应用性能要求
 
 四、web应用维护的要求
