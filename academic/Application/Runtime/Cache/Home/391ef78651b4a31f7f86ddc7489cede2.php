@@ -1,0 +1,59 @@
+<?php if (!defined('THINK_PATH')) exit();?><html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title> 菜单 </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="author" content="Jiangting@WiiPu -- http://www.wiipu.com" />
+    <link rel="stylesheet" href="/academic/Public/css/style2.css" type="text/css"/>
+  <style>
+  .menu_h3{cursor:pointer;}
+  </style>
+  <script src="/academic/Public/js/jquery.js">
+  </script>
+  <script>
+  $(function(){
+    $(".menu_intor").hide();
+    $(".menu_h3").click(function(){
+        if($(this).siblings(".menu_intor").is(":hidden")){
+            $(this).siblings(".menu_intor").show();
+        }else{
+            $(this).siblings(".menu_intor").hide();
+        }
+        
+    })
+  })
+  </script>
+ </head>    
+    <body id="flow">
+        <div class="menu" id="me">
+            <div class="menu_content">
+                <div class="menu_h menu_h3">个人管理</div>
+                <div class="menu_intor">                  
+                    <p><a href="modify_pass" target="mainFrame">修改密码</a></p>
+                </div>               
+            </div>
+            <div class="menu_content">
+                <div class="menu_h menu_h3">课程管理</div>
+                <div class="menu_intor">
+                    <p><a href="class_list" target="mainFrame">所有课程</a></p>
+                    <p><a href="class_add" target="mainFrame">添加课程</a></p>
+                </div>               
+            </div>                       
+            <div class="menu_content">
+                <div class="menu_h menu_h3">学院管理</div>
+                <div class="menu_intor">
+                    <p><a href="depart_list" target="mainFrame">所有学院</a></p>
+                    <p><a href="depart_add" target="mainFrame">添加学院</a></p>
+                </div>               
+            </div>              
+            <!--
+            <div class="menu_content">
+                <div class="menu_h menu_h3">教学计划</div>
+                <div class="menu_intor">
+                    <p><a href="class_list" target="mainFrame">查看计划</a></p>
+                    <p><a href="class_add" target="mainFrame">指定计划</a></p>
+                </div>               
+            </div>
+            -->  
+        </div>
+    </body>
+</html>
